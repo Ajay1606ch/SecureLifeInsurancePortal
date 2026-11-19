@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SecureLife | Insurance Portal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><span class="brand-mark">✦</span><span>secure<span class="brand-light">life</span></span></div>
+      <div class="side-label">MENU</div>
+      <nav id="navigation">
+        <button class="nav-item active" data-page="dashboard"><span>⌂</span> Overview</button>
+        <button class="nav-item" data-page="policies"><span>▤</span> My policies</button>
+        <button class="nav-item" data-page="calculator"><span>⌁</span> Premium calculator</button>
+        <button class="nav-item" data-page="claims"><span>♧</span> Claims</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="help-card"><span class="help-icon">?</span><strong>Need help?</strong><p>Our support team is here for you.</p><button id="supportBtn" class="outline-small">Contact support</button></div><div class="profile-mini"><div class="avatar">AC</div><div><strong id="sideUserName">Ajay Customer</strong><small>Customer account</small></div><button id="logoutBtn" title="Log out">↪</button></div></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><button id="mobileMenu" class="icon-btn">☰</button><div class="breadcrumb">Customer portal <span>/</span> <b id="pageTitle">Overview</b></div><div class="top-actions"><button class="icon-btn" id="notificationBtn" aria-label="Notifications">♧<i class="dot"></i></button><div class="avatar" id="topAvatar">AC</div></div></header>
+      <section id="content" class="content"></section>
+    </main>
+  </div>
+  <div id="modalRoot"></div><div id="toastRoot" class="toast-root"></div>
+  <script src="script.js"></script>
+</body>
+</html>
